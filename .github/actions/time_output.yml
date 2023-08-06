@@ -1,8 +1,0 @@
-name: "Time Output"
-description: "A GitHub Action that outputs the current date and time."
-
-runs:
-  using: "composite"
-  steps:
-    - name: Output Current Time
-      run: echo "Current time: $(date)"
