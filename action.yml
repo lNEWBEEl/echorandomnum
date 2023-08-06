@@ -1,4 +1,4 @@
-name: '输出当前时间'
+name: 'echo time 输出当前时间'
 description: '此Action将输出当前时间'
 author: 'Your Name'
 branding:
