@@ -1,0 +1,20 @@
+name: '输出当前时间'
+description: '此Action将输出当前时间'
+author: 'Your Name'
+branding:
+  icon: 'clock'
+  color: 'gray-dark'
+
+inputs:
+  time-format:
+    description: '时间格式（默认为ISO格式）'
+    required: false
+    default: 'iso'
+
+outputs:
+  current-time:
+    description: '输出当前时间'
+
+runs:
+  using: 'node12'
+  main: 'index.js'
