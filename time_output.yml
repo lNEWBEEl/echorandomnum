@@ -1,0 +1,14 @@
+name: Print Current Time
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print_time:
+    name: Print Current Time
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Print Current Time
+        run: echo "Current time is $(date)"
