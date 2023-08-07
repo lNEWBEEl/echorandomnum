@@ -1,0 +1,16 @@
+name: test action
+on: 
+  push:
+  workflow_dispatch:
+
+jobs:
+  output-time:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: '输出当前时间'
+        id: output-time
+        uses: lNEWBEEl/echotime@main
