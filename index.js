@@ -1,4 +1,4 @@
-const core = require('@actions/core');
+import * as core from "@actions/core";
 
 function getCurrentTime() {
   const timeFormat = core.getInput('time-format');
