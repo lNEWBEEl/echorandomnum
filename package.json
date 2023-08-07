@@ -1,6 +1,0 @@
-{
-  "type": "module",
-  "dependencies": {
-    "@actions/core": "^1.0.0"
-  }
-}
