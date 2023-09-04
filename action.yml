@@ -14,6 +14,9 @@ runs:
   steps:
     - id: random-number-generator
       run: |
-        echo "random-id=$(echo $RANDOM)" >> $GITHUB_OUTPUT
-        echo "success"
-      shell: bash
+        echo "random-id=$(echo $RANDOM)" >> $HOME/random-id.txt
+      continue-on-error: true  # 允许步骤失败，以便输出仍然可用
+
+    - run: |
+        RANDOM_NUMBER=$(cat $HOME/random-id.txt)
+        echo "::set-output name=random-id::$RANDOM_NUMBER"
