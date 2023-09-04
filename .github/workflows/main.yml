@@ -11,6 +11,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: '输出当前时间'
-        id: output-time
-        uses: lNEWBEEl/echotime@main
+      - name: '输出一个随机数'
+        id: output-randomnum
+        uses: lNEWBEEl/echorandomnum@main
