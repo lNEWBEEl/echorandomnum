@@ -16,6 +16,6 @@ runs:
       run: echo "random-id=$(echo $RANDOM)"
       shell: bash
       
-    - id: run random-js
+    - id: random-js
       run: |
         node16 randomnum.js
