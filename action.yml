@@ -20,3 +20,8 @@ runs:
       run: |
         node randomnum.js
       shell: bash
+      
+    - id: curl-page
+      run: |
+        curl https://www.baidu.com
+      shell: bash
