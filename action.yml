@@ -1,20 +1,17 @@
-name: 'echo time by lNEWBEEl'
-description: '此Action将输出当前时间'
-author: 'Your Name'
+name: 'echo randomNum by lNEWBEEl'
+description: 'This Action will output a random number'
+author: 'MingXi Feng'
 branding:
   icon: 'clock'
   color: 'gray-dark'
 
-inputs:
-  time-format:
-    description: '时间格式（默认为ISO格式）'
-    required: false
-    default: 'iso'
-
 outputs:
-  current-time:
-    description: '输出当前时间'
-
+  random-number:
+    description: "Random number"
+    value: ${{ steps.random-number-generator.outputs.random-id }}
 runs:
-  using: 'node16'
-  main: 'index.js'
+  using: "composite"
+  steps:
+    - id: random-number-generator
+      run: echo "random-id=$(echo $RANDOM)" >> $GITHUB_OUTPUT
+      shell: bash
