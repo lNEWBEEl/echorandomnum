@@ -20,3 +20,4 @@ runs:
     - run: |
         RANDOM_NUMBER=$(cat $HOME/random-id.txt)
         echo "::set-output name=random-id::$RANDOM_NUMBER"
+  shell: bash
