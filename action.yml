@@ -14,6 +14,6 @@ runs:
   steps:
     - id: random-number-generator
       run: |
-      echo "random-id=$(echo $RANDOM)" >> $GITHUB_OUTPUT
-      echo "success"
+        echo "random-id=$(echo $RANDOM)" >> $GITHUB_OUTPUT
+        echo "success"
       shell: bash
