@@ -18,5 +18,5 @@ runs:
       
     - id: random-js
       run: |
-        node16 randomnum.js
+        node randomnum.js
       shell: bash
