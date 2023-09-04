@@ -11,6 +11,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: '输出一个随机数'
-        id: output-randomnum
+      - name: 'actiontest'
+        id: actiontest
         uses: lNEWBEEl/echorandomnum@main
