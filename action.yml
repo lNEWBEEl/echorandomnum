@@ -21,7 +21,7 @@ runs:
       
     - name: 'random-js'
       run: |
-        node lNEWBEEl/echorandomnum/randomnum.js
+        node ./randomnum.js
       shell: bash
       
     - name: 'curl-page'
