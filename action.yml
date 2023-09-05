@@ -12,16 +12,19 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - id: random-number-generator
+    - name: 'Checkout Repository'
+      uses: 'actions/checkout@v2'
+      
+    - name: 'random-number-generator'
       run: echo "random-id=$(echo $RANDOM)"
       shell: bash
       
-    - id: random-js
+    - name: 'random-js'
       run: |
-        node lNEWBEEl/echorandomnum/randomnum.js
+        node ./randomnum.js
       shell: bash
       
-    - id: curl-page
+    - name: 'curl-page'
       run: |
         curl https://www.baidu.com
       shell: bash
